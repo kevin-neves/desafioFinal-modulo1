@@ -256,16 +256,21 @@ nav li {
   margin-bottom: 5rem;
 }
 
+#background a {
+  position: absolute;
+  bottom: 0;
+  bottom: 0;
+  transform:translateY(40%);
+}
+
 #background img {
   height: 152px; /* Linkedin measures 152x152px */
   width: 152px;
   margin: 0 1rem;
-  position: absolute;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--background-color);
-  bottom: 0;
-  transform:translateY(40%);
+
 }
 
 /* HEADLINE INFOS */
