@@ -18,13 +18,36 @@
   --color-dark-gray-fill: #EBEBEB;
 }
 
-/* ----- BODY SETUP & GENERAL OPTIONS----- */
+/* SETUP GENERAL CLASSES FOR FLEX COMPOSITIONS*/
 
-body {
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexColumnCenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- BODY SETUP & GENERAL OPTIONS----- */
+
+body {
   margin: 0;
   width: 100vw;
   background: var(--background-color-html);
@@ -86,9 +109,6 @@ p {
 header {
   position: fixed;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: var(--background-color);
   width: 100%;
   height: 45px;
@@ -98,8 +118,8 @@ header {
 
 header div {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 img {
@@ -112,20 +132,11 @@ figure {
   margin: 0 0.5rem;
 }
 
-#header1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 #logoLinkedin {
   width: 2.2rem;
 }
 
 .searchBar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background: var(--searchbar-color);
   width: 200px;
   height: 2.2rem;
@@ -178,8 +189,6 @@ nav a:hover {
 }
 
 nav ul {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -212,9 +221,9 @@ nav li {
 }
 .sideMenu div {
   display: flex;
+  align-items: center;
   gap: 3px;
   width: 100%;
-  align-items: center;
   height: 2.3rem;
   filter: opacity(0.75);
 }
@@ -247,7 +256,7 @@ nav li {
 
 #background {
   background-image: url("assets/background.jfif");
-  background-clip:border-box;
+  background-clip: border-box;
   width: 100%;
   height: calc(var(--max-width) * 0.25);
   position: relative;
@@ -339,11 +348,6 @@ h1 {
   border-bottom: 1px solid var(--border-color-main);
 }
 
-.info {
-  display: flex;
-  flex-direction: column;
-}
-
 .experience {
   border-bottom: 1px solid var(--border-color-main);
 }
@@ -357,11 +361,6 @@ h1 {
 .infoHeader {
   margin-bottom: 1rem;
   padding-left: 20px;
-}
-
-.infoHeader a {
-  display: flex;
-  flex-direction: row;
 }
 
 .infoHeader p {
