@@ -12,66 +12,70 @@
     <link rel="stylesheet" href="style.css" />
     <title>Fakedin</title>
   </head>
-  <body>
-    <header>
+  <body class="flexColumnCenter">
+    <header class="flex">
       <div class="container">
         <div>
-          <figure>
-            <img
-              id="logoLinkedin"
-              src="assets/linkedin.jpg"
-              alt="Logo Linkedin"
-            />
+          <figure id="linkedinLogo">
+            <a href="#">
+              <img
+                class="logoLinkedin"
+                src="assets/linkedin.jpg"
+                alt="Logo Linkedin"
+              />
+          </a>
           </figure>
-          <div class="searchBar">
-            <img id="loupe" src="assets/loupe.png" />
+          <div class="searchBar flexRowCenter">
+            <label for="search"><img id="loupe" src="assets/loupe.png" /></label>
             <input id="search" type="text" placeholder="Pesquisar" />
           </div>
         </div>
-        <nav>
-          <ul id="nav">
-            <li>
-              <a href="#"
-                ><img src="assets/home-icon-silhouette.png" />
-                <p>Início</p></a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="assets/group-of-three-men-standing-side-by-side-hugging-each-other.png"
-                />
-                <p>Minha rede</p>
-              </a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/portfolio.png" />
-                <p>Vagas</p></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/chat.png" />
-                <p>Mensagens</p></a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/bell.png" />
-                <p>Notificações</p></a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="sideMenu">
-          <a href="#">
-            <img src="assets/Foto.jpeg" alt="foto" />
-            <div>
-              <p>Eu</p>
-              <div id="triangle"></div>
-            </div>
-          </a>
+        <div class="rightHeader">
+          <nav>
+            <ul class="flexRowCenter">
+              <li>
+                <a href="#"
+                  ><img src="assets/home-icon-silhouette.png" />
+                  <p>Início</p></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/group-of-three-men-standing-side-by-side-hugging-each-other.png"
+                  />
+                  <p>Minha rede</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/portfolio.png" />
+                  <p>Vagas</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/chat.png" />
+                  <p>Mensagens</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/bell.png" />
+                  <p>Notificações</p></a
+                >
+              </li>
+            </ul>
+          </nav>        
+          <div class="sideMenu">
+            <a href="#">
+              <img src="assets/Foto.jpeg" alt="foto" />
+              <div>
+                <p>Eu</p>
+                <div id="triangle"></div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -104,9 +108,9 @@
           <div>
             <h2>Experiência</h2>
             <div>
-              <div class="info">
+              <div class="flexColumn">
                 <div class="infoHeader">
-                  <a href="#">
+                  <a class="flexRow" href="#">
                     <figure class="logo">
                       <img src="assets/sagrado-rede.jfif" alt="logo" />
                     </figure>
@@ -134,9 +138,9 @@
                   </div>
                 </div>
               </div>
-              <div class="info">
+              <div class="flexColumn">
                 <div class="infoHeader">
-                  <a href="#">
+                  <a class="flexRow" href="#">
                     <figure class="logo">
                       <img src="assets/logo-senai.jfif" alt="logo" />
                     </figure>
@@ -172,9 +176,9 @@
           <div>
             <h2>Formação Acadêmica</h2>
             <div>
-              <div class="info">
+              <div class="flexColumn">
                 <div class="infoHeader">
-                  <a href="#">
+                  <a class="flexRow" href="#">
                     <figure class="logo">
                       <img src="assets/logo-utfpr.jfif" alt="Logo UFPR" />
                     </figure>
@@ -189,9 +193,9 @@
                   <div class="contentBox"><p></p></div>
                 </div>
               </div>
-              <div class="info">
+              <div class="flexColumn">
                 <div class="infoHeader">
-                  <a href="#">
+                  <a class="flexRow" href="#">
                     <figure class="logo">
                       <img src="assets/logo-pucpr.jfif" alt="Logo PUCPR" />
                     </figure>
